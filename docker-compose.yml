@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dovecot:
+    image: 'opensourcery/dovecot:latest'
+    volumes:
+      - /path/to/mail/mail:/home
+    ports:
+      - "143:143"
